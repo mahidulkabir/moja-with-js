@@ -31,15 +31,27 @@
                 </h2>
                 <textarea name="" id="text-box" placeholder="Write a review..." class=" ml-20 mt-10 p-6 w-[400px] border-2 border-black rounded-lg"></textarea>
                 <br>
-                <button class="btn btn-primary my-4 mx-60"> Submit </button>
+                <button class="btn btn-primary my-4 mx-60" id="btn-submit"> Submit </button>
             </div>
            
         </section>
     
-    <div class="border-2 border-black mx-auto my-20 w-[600px] rounded-lg">
-                    <h2> Reviews..</h2>
+    <div class="border-2 border-black mx-auto my-20 w-[600px] rounded-lg" id="review-here">
+                    <h2 class="text-3xl text-red-500" > Reviews....<i class="fa-regular fa-face-kiss-wink-heart" style="color: #f00b0b;"></i></h2>
                 </div>
         
+    <script>
+        let serial = 1;
+        document.getElementById('btn-submit').addEventListener('click',function(){
+            const reviewText = document.getElementById('text-box').value;
+           const newP = document.createElement('p');
+           newP.innerText= `${serial}. ${reviewText}`;
+           newP.style.marginLeft = '20px';
+          document.getElementById('review-here').appendChild(newP);
+            serial += 1;
+            
+        })
+    </script>
     <script src="./js files/index.js"></script>
 </body>
 </html>
