@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/80fe2512d1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Moja with js</title>
 </head>
 <body>
+    <body class="my-20 ">
+        <!-- count app section  -->
+        <section class="border border-2 border-black m-auto w-[500px] rounded-lg">
+ <h1 class="text-center text-3xl" >Welcome to my count App </h1>
+       <div class="text-center" >
+        <h2 class="count-zero text-5xl m-5" id="zero"> 0 </h2>
+        <button class="btn btn-primary pb-3 m-5 text-5xl" id="btn-add"> + </button>
+    <button class="btn btn-secondary pb-3 m-5 text-5xl" id="btn-minus"> - </button>
+       </div>
+        </section>
+       
+
+        <!-- review comment section  -->
+
+        <section class="border border-2 border-black mx-auto my-20 w-[600px] rounded-lg">
+             
+            <div>
+                <h2 class="text-center text-3xl pt-5 px-2" > Don't forget to leave a review for my app <i class="fa-regular fa-face-smile-wink" style="color: #0a0a0a;"></i>
+                </h2>
+                <textarea name="" id="text-box" placeholder="Write a review..." class=" ml-20 mt-10 p-6 w-[400px] border-2 border-black rounded-lg"></textarea>
+                <br>
+                <button class="btn btn-primary my-4 mx-60"> Submit </button>
+            </div>
+           
+        </section>
     
+    <div class="border-2 border-black mx-auto my-20 w-[600px] rounded-lg">
+                    <h2> Reviews..</h2>
+                </div>
+        
+    <script src="./js files/index.js"></script>
 </body>
 </html>
